@@ -1,0 +1,22 @@
+<h3>FORM DATOS</h3>
+<table>
+    <thead>
+      <tr>
+        <th>usuario</th>
+        <th>password</th>
+        <th>email</th>
+        <th>nombre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dato of datos">
+        <td>{{dato.idUsuario}}</td>
+        <td>{{dato.password}}</td>
+        <td>{{dato.email}}</td>
+        <td>
+          <!--                           con esto nos referimos al atributo del css MUY IMPORTANTE -->
+          <span class="tooltip-trigger" [attr.data-tooltip]="dato.nombre">i</span>
+        </td>
+      </tr>
+    </tbody>
+</table>

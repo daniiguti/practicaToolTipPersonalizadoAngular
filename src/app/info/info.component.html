@@ -1,1 +1,14 @@
 <h3>INFO</h3>
+<div>
+    <label>Texto 1</label>
+    <input type="text" required #texto1>
+    <br>
+    <label>Texto 2</label>
+    <input type="text" required #texto2>
+    <br>
+    <label>Texto 3</label>
+    <input type="text" required #texto3>
+    <br>
+    <button (click)="mostrarHijo()">COMPROBAR</button>
+</div>
+<app-texto-aux [hidden]="hidden" [texto1]="texto1.value" [texto2]="texto2.value" [texto3]="texto3.value"></app-texto-aux>

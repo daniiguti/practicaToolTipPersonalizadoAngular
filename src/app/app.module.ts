@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarPersonalizadoComponent } from './navbar-personalizado/navbar-personalizado.component';
+import { TextoAuxComponent } from './texto-aux/texto-aux.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NavbarPersonalizadoComponent } from './navbar-personalizado/navbar-pers
     FooterComponent,
     HomeComponent,
     InfoComponent,
-    NavbarPersonalizadoComponent
+    NavbarPersonalizadoComponent,
+    TextoAuxComponent
   ],
   imports: [
     BrowserModule,
